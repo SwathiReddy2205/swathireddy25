@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function evennumbers(){
+            for(let i=2;i<=20;i+=2 ){
+                console.log(i);
+            }
+        }
+        evennumbers(); 
+
+        function mul(){
+          var a=5;
+            for(i=1;i<=10;i++){
+             table=a*i;
+        console.log(a+ "x"+i+"="+table);
+        }
+        }
+        mul();
+
+        function OddNumbers() {
+        for (let i=30;i>=1;i--) {
+        if (i % 2 !== 0) {
+        console.log(i);
+        }
+      }
+    }
+    OddNumbers();
+
+
+    function Summation() {
+    let sum = 0;
+    for (let i=1;i<=10;i++) {
+    sum += i;
+    }
+    return sum;
+    }
+
+    const result = Summation();
+    console.log("The sum of numbers from 1 to 10 is: " + result);
+        
+    
+    </script>
+    
+</body>
+</html>
