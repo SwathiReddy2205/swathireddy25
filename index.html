@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("stringslice()");document.write("<br>")      
+        document.write("1.Given a string JavaScript is awesome, how would you extract the word is using string slicing?");document.write("<br>");
+        let str="javascript is awesome";
+        var a=str.slice(10,13)
+        document.write(a)
+        
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("string substring()");document.write("<br>");
+        document.write("2.print the basic substring extraction?");document.write("<br>");
+        const str1="Hello, World!";
+        const b= str1.substring(0, 5);
+        document.write(b);
+
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("3.what is the difference between using slice() and substring() for string slicing?")
+        const str2= "Hello hyderabad";document.write("<br>");
+
+        const c= str2.slice(0, 5); 
+        document.write("sliced 0 to 5:-"+c); document.write("<br>"); 
+        const d= str2.substring(0, 5); 
+        document.write("substring 0 to 5:-"+d);document.write("<br>");
+        const e = str2.slice(-6);  
+        document.write( "slicednegative -6:-" +e);document.write("<br>");
+        const f= str2.substring(-6)
+        document.write( "substringnegative -6:-"+f);document.write("<br>");
+
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("string replace()");document.write("<br>");
+        document.write("4.Replace the first occurance of a substring?");document.write("<br>");
+        var str3 = "hello,world! hello, universe";
+        var str4 = str3.replace("hello", "hai");
+        document.write(str4); 
+
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("string replaceAll()");document.write("<br>");
+        document.write("5.Replace All Occurrences of a Substring:hello with hai?");document.write("<br>");
+        var str5="hello, goodmorning! hello, everyone!";
+        var str6=str5.replaceAll("hello", "hai");
+        document.write(str6);
+
+        document.write("<br>");
+        document.write("<br>");
+    
+        document.write("strint toUpperCase()");document.write("<br>");
+        var g ="swathireddy"
+        document.write(`6.convert the given lower case string "${g}" to uppercase?`);document.write("<br>")
+        document.write(`${g.toUpperCase()}`);
+        
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("string toLowerCase()");document.write("<br>");
+        var h="SWATHIREDDY"
+        document.write(`7.convert the given upper case string "${h}" to lowercase?`);document.write("<br>")
+        document.write(`${h.toLowerCase()}`);
+
+        document.write("string concat()");document.write("<br>");
+        document.write( "8.concate different words into a single sentence without using '+' operator");document.write("<br>")
+        var a1="hai,";
+        var a2="hello,";
+        var a3="goodmorning";
+        var a4="everyone!";
+        document.write(`${a1.concat(" ",a2," ",a3," ",a4,)}`);
+        
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("string trim()");document.write("<br>");
+        document.write("9.Remove Both Leading and Trailing Whitespace with Regular Expression?");document.write("<br>");
+        const text1 = "   Hello, world!   ";
+        const text2 = text1.replace(/^\s+|\s+$/g, "");
+        document.write(text2);
+
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("string trim()");document.write("<br>");
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+       
+    </script>
+    
+</body>
+</html>
