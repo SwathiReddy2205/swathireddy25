@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<b>1.Split</b>");
+        document.write("<br>");
+        var str="swarhi reddy"
+        var arr=str.split(" ")
+        document.write(str,"<br>")
+        document.write(arr,"<br>")
+        var str1="swathi%reddy"
+        var arr1=str1.split("%")
+        document.write(str1,"<br>")
+        document.write(arr1)
+
+        document.write("<br>");
+        document.write("<br>");
+
+    
+        document.write("<b>2. Join</b>");
+        document.write("<br>")
+        var arr=[9,8,7,6,5,4,3,2,1]
+        var str=arr.join()
+        document.write(arr,"<br>")
+        document.write(str,"<br>")
+        var str=arr.join(" ")
+        document.write(str,"<br>")
+        var str=arr.join("@")
+        document.write(str)
+
+        document.write("<br>");
+        document.write("<br>");
+    
+        
+        document.write("<b>3.check the prime numbers in an array using for in loop<br></b>")
+        var arr=[11,12,13,14,15,16,17,18,19,20]
+        for(i in arr){
+            c=0
+            for(j=1;j<=arr[i];j++){
+                if(arr[i]%j==0){
+                    c++
+                }
+            }
+            if(c==2){
+                document.write(`${arr[i]} is a prime number<br>`)
+            }
+        }
+
+        document.write("<br>");
+        document.write("<br>");
+    
+        document.write("<b>6. double the every value in array using for of loop</b><br>")
+        var arr=[2,0,5,1,6]
+        for(x of arr){
+            document.writeln(x*x)
+        }
+    
+        </script>
+    
+</body>
+</html>
