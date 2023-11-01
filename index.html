@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("1. Write a function that takes an integer minutes and converts it to seconds<br>")
+function sec(a){
+    var sec=a*60;
+    return sec
+}
+document.write(sec(10))
+
+document.write("<br>");
+document.write("<br>");
+
+document.write("2.print multiplication tables of  each elemnt in array using map");document.write("<br>");
+        const arr=[1,2,3]
+        arr.map((ele,i)=>{
+        for(i=1;i<=10;i++){
+         document.write(`${ele}*${i}=${ele*i}`)
+        }}
+        )
+
+        document.write("<br>");
+document.write("<br>");
+
+document.write("3.	Create a function that takes two numbers as arguments and returns their sum.<br>")
+function add(a,b){
+    var sum=a+b;
+    return sum;
+}
+document.write(add(3,4))
+
+document.write("<br>");
+document.write("<br>");
+
+document.write("4.	Create a function that takes a number as an argument, increments the number by +1 and returns the result<br>")
+function inc(a){
+    return ++a;
+}
+document.write(inc(12))
+
+document.write("<br>");
+document.write("<br>");
+
+document.write("5.	Create a function that takes the age in years and returns the age in days<br>")
+function age(a){
+    var b=parseInt(a/4);
+    c=((a-b)*365)+(b*366)
+    document.write(c)
+}
+age(16)
+
+document.write("<br>");
+document.write("<br>");
+
+document.write("6.	Create a function that takes two strings as arguments and returns either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string<br>")
+function streq(a,b){
+    if(a.length==b.length){
+        return "True"
+    }
+    else{
+        return "False"
+    }
+}
+document.write(streq("swathi","reddy"))
+
+document.write("<br>");
+document.write("<br>");
+
+
+document.write(`7.	Create a function that returns an array of strings sorted by length in ascending order.
+Example:
+sortByLength(["a", "ccc", "dddd", "bb"]) ➞ ["a", "bb", "ccc", "dddd"]
+<br>`);document.write("<br>")
+function asc(arr){
+    for(i=0;i<arr.length;i++){
+        for(j=0;j<i;j++){
+            if(arr[i].length<arr[j].length){
+                var temp=arr[i]
+                arr[i]=arr[j]
+                arr[j]=temp
+            }
+        }
+    }
+    return "["+arr+"]"
+}
+document.write(asc(["a", "ccc", "dddd", "bb"]));
+
+document.write("<br>");
+document.write("<br>");
+
+document.write("8.round the elements of an array to its nearest smallest values");document.write("<br>")
+const arr8=[0.9,1.22,5.2,4.7,3,8]
+for( item2 of arr8){
+    document.write(Math.floor(item2))
+}
+
+document.write("<br>");
+document.write("<br>");
+
+document.write("9.filter all the consonants from the array of strings");document.write("<br>");
+        const arr2=["lahari","SWATHI","LEkhana"]
+        arr2.filter((ele1)=>{
+            for(h of ele1)
+            if(h!="a"&&h!="e"&&h!="i"&&h!="o"&&h!="u"&&h!="A"&&h!="E"&&h!="I"&&h!="O"&&h!="U")
+            document.write(h) ;
+        }
+        )
+
+        document.write("<br>");
+document.write("<br>");
+
+document.write(`10.	Create a function that takes a string and returns the number (count) of vowels contained within it.
+Example:
+countVowels("Celebration") ➞ 5
+<br>`)
+function vowel(a){
+    var c=0;
+    for(i=0;i<a.length;i++){
+        if(a[i]==="a" || a[i]==="e" || a[i]==="i" || a[i]==="o" || a[i]==="u" || a[i]==="A" || a[i]==="E" || a[i]==="I"|| a[i]==="O" || a[i]==="U"){
+            c++;
+        }
+    }
+    return c;
+}
+document.write(vowel("celebrations"))
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
