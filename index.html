@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(`<b>PROBLEM 1. *Encapsulation with Getters and Setters:*Create a BankAccount class with encapsulated properties (accountNumber, balance). Implement methods getAccountNumber(), getBalance(), deposit(amount), and withdraw(amount) ensuring encapsulation.<BR></b>`)
+        class bank{
+            constructor(){
+                this.accountnumber;
+                this.balance;
+            }
+            setaccbal(accountnumber,balance){
+                this.accountnumber=accountnumber;
+                this.balance=balance;
+                
+            }
+            getaccountnum(){
+                return this.accountnumber
+            }
+            getbal(){
+                return this.balance
+            }
+            deposit(amount){
+                return this.balance+amount;
+            }
+            withdraw(money){
+                return this.balance-money;
+            }
+
+        }
+        let axis=new bank()
+        axis.setaccbal("AXS26051121",15688)
+        document.write(axis.getaccountnum(),"<br>")
+        document.write(axis.getbal(),"<br>")
+        document.write(axis.deposit(50000)," Credit<br>")
+        document.write(axis.withdraw(25000)," Debit<br>")
+        
+        document.write("<br><br>")
+
+        
+        
+
+        //problem 2
+        debugger
+        document.write(`<b>PROBLEM 2 *Private Properties:* Implement a class TemperatureConverter with a private property celsius. Implement methods setCelsius(value), getCelsius(), convertToFahrenheit(), and convertToKelvin() ensuring private access to the celsius property.<br></b>`)
+        class TemperatureConverter {
+        //celsius;
+
+        constructor() {
+            this.celsius;
+        }
+        // constructor(x) {
+        //     this.celsius=x;
+        // }
+
+        setCelsius(value) {
+            this.celsius = value;
+        }
+
+        getCelsius() {
+            return this.celsius;
+        }
+
+        ToFahrenheit() {
+            return (this.celsius * 9/5) + 32;
+        }
+
+        ToKelvin() {
+            return this.celsius + 273.15;
+        }
+        }
+        let converter=new TemperatureConverter()
+        converter.setCelsius(52);
+        document.write(converter.getCelsius(),"<br>"); 
+        document.write(converter.ToFahrenheit(),"<br>");
+        document.write(converter.ToKelvin(),"<br>"); 
+
+        document.write("<br><br>")
+
+
+
+
+        //problem 3
+        document.write(`<b> PROBLEM 3. *Static Method and Inheritance:*Create a MathOperations class with a static method square(number). Create a child class AdvancedMathOperations that extends MathOperations. Implement a static method cube(number) in AdvancedMathOperations.<br></b>`)
+        class major{
+            static math(x){
+                return x*x;
+            }
+        }
+        class mini extends major{
+            static maths(x){
+                return x*x*x;
+            }
+        }
+        document.write(major.math(9),"<br>")
+        document.write(mini.math(7),"<br>")
+        document.write(mini.maths(5),"<br><br><br>")
+
+    
+
+        //problem 4
+        document.write(`<b>PROBLEM 4. *Inheritance and Method Overriding:* Create a class Shape with methods calculateArea() and calculatePerimeter(). Create child classes Circle and Square that inherit from Shape. Override the calculateArea() method in both child classes.<br></b>`)
+        class Shape{
+        calculateArea(){
+            undefined
+        }
+
+        calculatePerimeter(){
+            undefined
+        }
+        }
+
+        class Circle extends Shape{
+        constructor(radius) {
+            super();
+            this.radius = radius;
+        }
+        calculateArea(){
+            return Math.PI*this.radius**2;
+        }
+        }
+
+        class Square extends Shape{
+        constructor(side){
+            super();
+            this.side = side;
+        }
+        calculateArea() {
+            return this.side**2
+            // return this.side*this.side;
+        }
+        }
+        let cir=new Circle(8)
+        document.write(cir.calculateArea(),"<br>")
+        let sq=new Square(4)
+        document.write(sq.calculateArea(),"<br>")
+    </script>
+    
+</body>
+</html>
